@@ -23,7 +23,6 @@ const SectionReviews = props => {
       {fetchReviewsError ? reviewsError : null}
       <h2 className={css.reviewsTitle}>
         <FormattedMessage id="ListingPage.suggestedProducts"/>
-        <FormattedMessage id="ListingPage.autoUpdate"/>
       </h2>
       <List />
     </div>

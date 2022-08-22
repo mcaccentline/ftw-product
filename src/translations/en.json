@@ -400,7 +400,6 @@
   "ListingPage.reviewsTitle": "Product reviews ({count})",
   "ListingPage.rulesTitle": "Disclaimer",
   "ListingPage.suggestedProducts": "Suggested Products",
-  "ListingPage.autoUpdate": "Hello Auto Update!!!",
   "ListingPage.schemaTitle": "{title} - {price} | {siteTitle}",
   "ListingPage.soldBy": "sold by {name}",
   "ListingPage.viewImagesButton": "View photos ({count})",

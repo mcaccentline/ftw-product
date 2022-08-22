@@ -35,7 +35,7 @@
   }
 
   @media (--viewportMedium) {
-    padding: 0 0 96px 0;
+    padding: 0 0 35px 0;
     grid-template-columns: repeat(2, 1fr);
   }
 
