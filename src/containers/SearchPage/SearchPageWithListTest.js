@@ -367,6 +367,7 @@ export class SearchPageComponent extends Component {
     // For some reason, stickyness doesn't work on Safari, if the element is <button>
     return (
       <Page>
+        <div className={css.layoutWrapperMain} role="main"></div>
         <div className={css.layoutWrapperContainerTest}>
                 <SearchResultsPanel
                   className={css.searchListingsPanel}
@@ -376,6 +377,7 @@ export class SearchPageComponent extends Component {
                   isMapVariant={false}
                 />
               </div>
+              
       </Page>
     );
   }

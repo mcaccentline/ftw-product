@@ -595,10 +595,12 @@
 
   @media (--viewportMedium) {
     padding: 0;
+  
   }
   @media (--viewportLarge) {
-    padding-bottom: 5px;
+    padding-bottom:0px;
     margin-bottom: 0;
+    /* background-color:black; */
   }
 }
 
