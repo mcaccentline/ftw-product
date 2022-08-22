@@ -23,6 +23,7 @@ import ManageListingCard from './ManageListingCard/ManageListingCard';
 
 import { closeListing, openListing, getOwnListingsById } from './ManageListingsPage.duck';
 import css from './ManageListingsPage.module.css';
+console.log('listings');
 
 export class ManageListingsPageComponent extends Component {
   constructor(props) {

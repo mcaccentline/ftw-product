@@ -141,3 +141,6 @@ export { default as PrivacyPolicy } from './PrivacyPolicy/PrivacyPolicy';
 export { default as TermsOfService } from './TermsOfService/TermsOfService';
 export { default as Footer } from './Footer/Footer';
 export { default as Topbar } from './Topbar/Topbar';
+export { default as List } from '../containers/SearchPage/SuggestedList.js';
+export { default as SuggestedListingCard } from '../components/ListingCard/SuggestedListingCard.js';
+export { default as SuggestedResultsPanel } from '../containers/SearchPage/SearchResultsPanel/SuggestedResultsPanel.js';

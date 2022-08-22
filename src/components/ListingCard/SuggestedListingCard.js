@@ -50,6 +50,7 @@ export const ListingCardComponent = props => {
     renderSizes,
     setActiveListing,
     showAuthorInfo,
+    selection,
   } = props;
   const classes = classNames(rootClassName || css.root, className);
   const currentListing = ensureListing(listing);
@@ -58,12 +59,13 @@ export const ListingCardComponent = props => {
   const slug = createSlug(title);
   const author = ensureUser(listing.author);
   const authorName = author.attributes.profile.displayName;
-  let metatest = author.attributes.profile.displayName;
-  //console.log(listing);
-  // if(metatest == 'Davi1d Lester B'){
-  //     console.log('test');
-  //   return null;
-  // };
+  let metatest = id;
+  
+  if(metatest == selection){
+    console.log(listing);
+    console.log('nagana');
+    return null;
+  };
   const firstImage =
     currentListing.images && currentListing.images.length > 0 ? currentListing.images[0] : null;
 

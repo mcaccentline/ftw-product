@@ -52,6 +52,7 @@ import SectionDescriptionMaybe from './SectionDescriptionMaybe';
 import SectionDetailsMaybe from './SectionDetailsMaybe';
 import SectionFeaturesMaybe from './SectionFeaturesMaybe';
 import SectionReviews from './SectionReviews';
+import SectionSuggested from './SectionSuggested';
 import SectionAuthorMaybe from './SectionAuthorMaybe';
 import SectionRulesMaybe from './SectionRulesMaybe';
 import SectionMapMaybe from './SectionMapMaybe';
@@ -478,6 +479,7 @@ export class ListingPageComponent extends Component {
                   publicData={publicData}
                 />
                 <SectionRulesMaybe publicData={publicData} />
+                
                 <SectionMapMaybe
                   geolocation={geolocation}
                   publicData={publicData}

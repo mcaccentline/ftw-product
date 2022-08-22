@@ -1,11 +1,13 @@
 import React from 'react';
 import { FormattedMessage } from '../../util/reactIntl';
-import { Reviews } from '../../components';
+
+import { List } from '../../components';
 
 import css from './ListingPage.module.css';
 
 const SectionReviews = props => {
   const { reviews, fetchReviewsError } = props;
+
 
   const reviewsError = (
     <h2 className={css.errorText}>
@@ -19,7 +21,10 @@ const SectionReviews = props => {
         <FormattedMessage id="ListingPage.reviewsTitle" values={{ count: reviews.length }} />
       </h2>
       {fetchReviewsError ? reviewsError : null}
-      <Reviews reviews={reviews} />
+      <h2 className={css.reviewsTitle}>
+        <FormattedMessage id="ListingPage.suggestedProducts"/>
+      </h2>
+      <List />
     </div>
   );
 };

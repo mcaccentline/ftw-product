@@ -399,6 +399,7 @@
   "ListingPage.reviewsError": "Loading reviews failed.",
   "ListingPage.reviewsTitle": "Product reviews ({count})",
   "ListingPage.rulesTitle": "Disclaimer",
+  "ListingPage.suggestedProducts": "Suggested Products",
   "ListingPage.schemaTitle": "{title} - {price} | {siteTitle}",
   "ListingPage.soldBy": "sold by {name}",
   "ListingPage.viewImagesButton": "View photos ({count})",
