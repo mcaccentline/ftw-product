@@ -14,7 +14,7 @@ const SectionReviews = props => {
       <FormattedMessage id="ListingPage.reviewsError" />
     </h2>
   );
-
+  
   return (
     <div className={css.sectionReviews}>
       <h2 className={css.reviewsTitle}>

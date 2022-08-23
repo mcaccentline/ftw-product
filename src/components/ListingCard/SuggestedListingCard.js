@@ -52,6 +52,16 @@ export const ListingCardComponent = props => {
     showAuthorInfo,
     selection,
   } = props;
+//   if (window.performance) {
+//   if (performance.navigation.type == 1) {
+//     //alert( "This page is reloaded" );
+//     console.log(ListingCardComponent);
+//   } else {
+//    // alert( "This page is not reloaded");
+//    //console.log('ari');
+//   }
+// }
+
   const classes = classNames(rootClassName || css.root, className);
   const currentListing = ensureListing(listing);
   const id = currentListing.id.uuid;
@@ -62,8 +72,8 @@ export const ListingCardComponent = props => {
   let metatest = id;
   
   if(metatest == selection){
-    console.log(listing);
-    console.log('nagana');
+    //console.log(listing);
+    //console.log('nagana');
     return null;
   };
   const firstImage =

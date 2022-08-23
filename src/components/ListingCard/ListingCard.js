@@ -51,6 +51,7 @@ export const ListingCardComponent = props => {
     setActiveListing,
     showAuthorInfo,
   } = props;
+  //console.log(ListingCardComponent);
   const classes = classNames(rootClassName || css.root, className);
   const currentListing = ensureListing(listing);
   const id = currentListing.id.uuid;
@@ -61,7 +62,7 @@ export const ListingCardComponent = props => {
   let metatest = author.attributes.profile.displayName;
   //console.log(listing);
   // if(metatest == 'Davi1d Lester B'){
-  //     console.log('test');
+  //     //console.log('test');
   //   return null;
   // };
   const firstImage =
