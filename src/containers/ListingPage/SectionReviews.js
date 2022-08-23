@@ -9,22 +9,22 @@ const SectionReviews = props => {
   const { reviews, fetchReviewsError } = props;
 
 
-  const reviewsError = (
-    <h2 className={css.errorText}>
-      <FormattedMessage id="ListingPage.reviewsError" />
-    </h2>
-  );
+  // const reviewsError = (
+  //   <h2 className={css.errorText}>
+  //     <FormattedMessage id="ListingPage.reviewsError" />
+  //   </h2>
+  // );
 
   return (
     <div className={css.sectionReviews}>
       <h2 className={css.reviewsTitle}>
         <FormattedMessage id="ListingPage.reviewsTitle" values={{ count: reviews.length }} />
       </h2>
-      {fetchReviewsError ? reviewsError : null}
+      {/* {fetchReviewsError ? reviewsError : null} */}
       <h2 className={css.reviewsTitle}>
         <FormattedMessage id="ListingPage.suggestedProducts"/>
       </h2>
-      {/* <List /> */}
+      <List />
     </div>
     
   );
