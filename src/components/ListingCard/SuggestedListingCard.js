@@ -52,15 +52,6 @@ export const ListingCardComponent = props => {
     showAuthorInfo,
     selection,
   } = props;
-//   if (window.performance) {
-//   if (performance.navigation.type == 1) {
-//     //alert( "This page is reloaded" );
-//     console.log(ListingCardComponent);
-//   } else {
-//    // alert( "This page is not reloaded");
-//    //console.log('ari');
-//   }
-// }
 
   const classes = classNames(rootClassName || css.root, className);
   const currentListing = ensureListing(listing);
@@ -69,11 +60,25 @@ export const ListingCardComponent = props => {
   const slug = createSlug(title);
   const author = ensureUser(listing.author);
   const authorName = author.attributes.profile.displayName;
-  let metatest = id;
+  const ngitabrand = listing.attributes;
+  let ngitabrandnagid = null;
+  if(Object.keys(ngitabrand).indexOf('publicData') > -1){
+    const ngitabrand2 = listing.attributes.publicData;
+    //console.log('isapa');
+    if(Object.keys(ngitabrand2).indexOf('brand') > -1){
+      //console.log('ara');
+      ngitabrandnagid = listing.attributes.publicData.brand;
+    }
+  }
+  else{
+    //console.log(ngitabrand);
+  }
   
-  if(metatest == selection){
-    //console.log(listing);
-    //console.log('nagana');
+  let metatest = id;
+
+  if((metatest == selection) && ngitabrandnagid != null ){
+    
+    console.log(ngitabrandnagid);
     return null;
   };
   const firstImage =

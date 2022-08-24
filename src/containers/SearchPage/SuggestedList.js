@@ -54,6 +54,7 @@ const validUrlQueryParamsFromProps = props => {
   // like mapSearch, page or origin (origin depends on config.sortSearchByDistance)
   return validURLParamsForExtendedData(searchInURL, filterConfig);
 };
+//console.log(validUrlQueryParamsFromProps);
 
 const cleanSearchFromConflictingParams = (searchParams, sortConfig, filterConfig) => {
   // Single out filters that should disable SortBy when an active
@@ -113,6 +114,7 @@ export class SearchPageComponent extends Component {
     // or original location search is rendered once,
     // we start to react to "mapmoveend" events by generating new searches
     // (i.e. 'moveend' event in Mapbox and 'bounds_changed' in Google Maps)
+    
     if (viewportBoundsChanged && isSearchPage) {
       const { history, location, filterConfig } = this.props;
 
@@ -201,11 +203,10 @@ export class SearchPageComponent extends Component {
         }, {})
       : {};
   }
-
+  
   getHandleChangedValueFn(useHistoryPush) {
     const { history, sortConfig, filterConfig } = this.props;
     const urlQueryParams = validUrlQueryParamsFromProps(this.props);
-
     return updatedURLParams => {
       const updater = prevState => {
         const { address, bounds, keywords } = urlQueryParams;
